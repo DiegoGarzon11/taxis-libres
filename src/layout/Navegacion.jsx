@@ -11,8 +11,8 @@ export function Navegacion() {
 
 	return (
 		<>
-			<nav className=' bg-secondary   w-full  fixed'>
-				<div className=' flex h-16 items-center justify-around '>
+			<nav className='w-full fixed z-10'>
+				<div className='flex h-16 items-center justify-around backdrop-blur-3xl' style={{backgroundColor: '#181818', opacity: '0.8'}}>
 					<div>
 						<img src='src/assets/logo.png' alt='' className='w-32' />
 					</div>
@@ -25,11 +25,12 @@ export function Navegacion() {
 							<Tab label='Ciudades' component={Link} to='/ciudades' sx={{color: 'white'}} />
 						</Tabs>
 					</Box>
-					<Button sx={{border: 'solid', color: ' white', borderColor: '#f1fb42'}}>App</Button>
+					<Button sx={{border: 'solid', color: 'white', borderColor: '#f1fb42'}}>App</Button>
 				</div>
 			</nav>
+
 			<Outlet />
-			<button className='fixed right-5 bg-terciary p-5 rounded-full bottom-5'> Soporte</button>
+			<button className='fixed right-5 border-2 border-primary text-terciary bg-secondary p-5 rounded-full bottom-5'> Soporte</button>
 		</>
 	);
 }

@@ -7,6 +7,7 @@ export default {
 				primary: '#f1fb42',
 				secondary: '#181818',
 				terciary: '#ffffff',
+				quaternary: '#f5f5f5',
 			},
 		},
 	},
