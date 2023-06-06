@@ -1,19 +1,16 @@
 import {useState} from 'react';
 import {styled} from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
+
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
+
 import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
+
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import {red} from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const ExpandMore = styled((props) => {
 	const {expand, ...other} = props;
@@ -34,7 +31,7 @@ export function RecipeReviewCard({imagen, info, texto}) {
 	};
 
 	return (
-		<Card sx={{maxWidth: 345}}>
+		<Card sx={{maxWidth: 345, height: 'auto', backgroundColor: '#f5f5f5'}}>
 			<CardMedia component='img' height='194' image={imagen} alt='Paella dish' />
 			<CardContent>
 				<Typography variant='body2' color='black' sx={{fontSize: '22px'}}>
