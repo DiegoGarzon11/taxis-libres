@@ -133,7 +133,7 @@ export function Nosotros() {
 					<p>viajes diarios</p>
 				</div>
 				<div className='flex flex-col items-center gap-3 w-3/5 text-center'>
-					<img src='/src/assets/nosotros/ico-pic3.png' alt='' />
+					<img src='/assets/nosotros/ico-pic3.png' alt='' />
 					<p className='font-extrabold text-3xl'>500+</p>
 					<p>Personas forman nuestro equipo de trabajo ¡El 66% son mujeres!</p>
 				</div>
