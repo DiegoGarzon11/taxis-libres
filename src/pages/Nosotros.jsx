@@ -1,18 +1,11 @@
-import {useTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import {autoPlay} from 'react-swipeable-views-utils';
 import {useState} from 'react';
 import {Card} from '@mui/material';
 import {Footer} from '../layout/Footer';
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
 	{
@@ -61,21 +54,20 @@ const images = [
 ];
 
 export function Nosotros() {
-	const theme = useTheme();
 	const [activeStep, setActiveStep] = useState(0);
 	const maxSteps = images.length;
 
 	const handleNext = () => {
-		setActiveStep((prevActiveStep) => prevActiveStep + 1);
+		setActiveStep((prevStep) => prevStep + 1);
 	};
 
 	const handleBack = () => {
-		setActiveStep((prevActiveStep) => prevActiveStep - 1);
+		setActiveStep((prevStep) => prevStep - 1);
 	};
 
-	const handleStepChange = (step) => {
-		setActiveStep(step);
-	};
+	// const handleStepChange = (step) => {
+	// 	setActiveStep(step);
+	// };
 
 	return (
 		<>
@@ -97,52 +89,36 @@ export function Nosotros() {
 							{images[activeStep].año}
 						</Typography>
 					</Paper>
-					<AutoPlaySwipeableViews
-						axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-						index={activeStep}
-						onChangeIndex={handleStepChange}
-						enableMouseEvents>
-						{images.map((step, index) => (
-							<Card key={step.label} sx={{maxWidth: 400, flexGrow: 1, height: '100%'}}>
-								<div>
-									{Math.abs(activeStep - index) <= 2 ? (
-										<Box
-											component='img'
-											sx={{
-												height: 255,
-												display: 'block',
-												maxWidth: 400,
-												overflow: 'hidden',
-												width: '100%',
-											}}
-											src={step.imgPath}
-										/>
-									) : null}
-								</div>
-								<Typography variant='h5' sx={{textAlign: 'center', flexGrow: 1}}>
-									{images[activeStep].label}
-								</Typography>
-								<p className='px-3 text-center pt-5  h-min'>{step.text}</p>
-							</Card>
-						))}
-					</AutoPlaySwipeableViews>
-					<MobileStepper
-						steps={maxSteps}
-						position='static'
-						activeStep={activeStep}
-						nextButton={
-							<Button size='small' onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-								Next
-								{theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
-							</Button>
-						}
-						backButton={
-							<Button size='small' onClick={handleBack} disabled={activeStep === 0}>
-								{theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-								Back
-							</Button>
-						}
-					/>
+					<div className='flex flex-col items-center justify-center w-full '>
+						<Card
+							sx={{
+								display: 'flex',
+								flexDirection: 'column',
+								justifyContent: 'space-between',
+								alignItems: 'center',
+							}}>
+							<img src={images[activeStep].imgPath} alt={images[activeStep].label} />
+							<MobileStepper
+								steps={maxSteps}
+								position='static'
+								activeStep={activeStep}
+								nextButton={
+									<Button size='small' onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+										Next
+									</Button>
+								}
+								backButton={
+									<Button size='small' onClick={handleBack} disabled={activeStep === 0}>
+										Back
+									</Button>
+								}
+							/>
+							<Typography variant='h5' align='center' sx={{marginY: '20px'}}>
+								{images[activeStep].label}
+							</Typography>
+							<Typography align='center'>{images[activeStep].text}</Typography>
+						</Card>
+					</div>
 				</Box>
 			</div>
 			<section className='w-full bg-secondary text-terciary flex justify-evenly gap-5 py-16'>
