@@ -59,7 +59,7 @@ export function Navegacion() {
 			<nav className='w-full fixed z-10'>
 				<div className='flex h-16 items-center justify-around backdrop-blur-3xl' style={{backgroundColor: '#181818', opacity: '0.8'}}>
 					<div>
-						<img src='src/assets/logo.png' alt='' className='w-32' />
+						<img src='/assets/logo.png' alt='' className='w-32' />
 					</div>
 					<Box>
 						<Tabs value={value} onChange={handleChange} aria-label='nav tabs example'>

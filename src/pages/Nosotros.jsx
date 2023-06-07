@@ -12,44 +12,44 @@ const images = [
 		año: '1980',
 		label: 'Taxis en Bogotá: una ventana de oportunidad',
 		text: 'Hasta inicios de los ochenta, el taxismo en Colombia no tenía mucha regulación. Además, en el Aeropuerto El Dorado,los taxistas no respetaban el orden de llegada, lo que generaba desorden en el muelle. José Eduardo Hernández,un estudiante de ingeniería, nacido en la Uvita, Boyacá, identificó esta problemática como una gran oportunidad.',
-		imgPath: 'src/assets/nosotros/Aeropuerto-Internacional-El-Dorado.png',
+		imgPath: '/assets/nosotros/Aeropuerto-Internacional-El-Dorado.png',
 	},
 	{
 		año: '1982',
 		label: '¡Nuevo gobierno, nueva regulación!',
 		text: 'En el nuevo mandato de Belisario Betancur se introdujeron varias normas en el servicio público tipo taxi a nivel nacional. Además, se delegó el control de los taxis en El Dorado a la Asociación de Conductores Guías de Turismo, eligiendo como representantes a Uldarico Peña, Pedro Julio Páez, Jose Eduardo Hernández y otros más que trabajaron sin remuneración económica.',
-		imgPath: 'src/assets/nosotros/Asociacion-de-Conductores-Guias-de-Turismo.png',
+		imgPath: '/assets/nosotros/Asociacion-de-Conductores-Guias-de-Turismo.png',
 	},
 
 	{
 		año: '2000',
 		label: 'Taxis libres de cara a las necesidades del nuevo milenio',
 		text: 'Nació una nueva empresa del Grupo Taxis Libres, denominada “Cotech Comunicación, Tech y Transporte S.A.”. En adelante, Cotech pasó a administrar la operación de los radioteléfonos de la empresa y a liderar el desarrollo de nuevas tecnologías para facilitar la experiencia de usuarios, conductores y propietarios.',
-		imgPath: 'src/assets/nosotros/Ingenieros-Cotech.png',
+		imgPath: '/assets/nosotros/Ingenieros-Cotech.png',
 	},
 	{
 		año: '2021',
 		label: 'Hackathon Taxis Libres',
 		text: 'Se creó la Hackathon Taxis Libres, un evento gratuito y 100% digital que dio solución a una serie de retos reales sobre movilidad en el país y en el que participaron más de 540 personas de diferentes regiones de Colombia y del mundo. Al final, fueron entregados más de $25.000 USD en beneficios.',
-		imgPath: 'src/assets/nosotros/Logo-hackathon.png',
+		imgPath: '/assets/nosotros/Logo-hackathon.png',
 	},
 	{
 		año: '2020',
 		label: 'Taxis Libres me protege',
 		text: 'Para mitigar el riesgo de contagio de Covid-19, desinfectamos más de 20.000 taxis con peróxido de hidrógeno y vapor de agua, instalamos más de 5.000 paneles protectores a taxis y regalamos más de un millón de tapabocas a los conductores que estuvieran vinculados a nuestra compañía o que contaran con Taxis Libres App Conductor.',
-		imgPath: 'src/assets/nosotros/Panel-Protector-de-taxi.png',
+		imgPath: '/assets/nosotros/Panel-Protector-de-taxi.png',
 	},
 	{
 		año: '2006',
 		label: 'Los seguros, una nueva oportunidad',
 		text: 'Para la década de los noventa las compañías de seguros no querían afiliar taxis de forma individual por el alto grado de robo y siniestralidad en el país.En ese contexto nació Innovadora de Seguros, empresa especializada en asesoría de seguros y que hoy en día comercializa pólizas de grandes aseguradoras como Allianz, Liberty, Mapfre, Sura, AXA Colpatria y Previsora. En 2006, la empresa se transformó en Vía Seguros Ltda.',
-		imgPath: 'src/assets/nosotros/Via-Seguros.png',
+		imgPath: '/assets/nosotros/Via-Seguros.png',
 	},
 	{
 		año: '2020',
 		label: '¿Pedir taxi por WhatsApp? Ahora es posible',
 		text: 'Ahora los usuarios pueden solicitar servicios de taxi a través de WhatsApp y ser asistidos por un chatbot que usa aprendizaje automático e inteligencia artificial. Está disponible en Bogotá, Cali, Medellín, Cúcuta, Bucaramanga y Manizales. Para pedir un taxi, solo necesita agregar en sus contactos el número 310 2111111.',
-		imgPath: 'src/assets/nosotros/WhatsApp-para-pedir-taxi.png',
+		imgPath: '/assets/nosotros/WhatsApp-para-pedir-taxi.png',
 	},
 ];
 
@@ -75,7 +75,7 @@ export function Nosotros() {
 				<img src='/assets/nosotros/sede-cucuta.png' alt='' className='w-full object-cover aspect-video ' />
 			</div>
 			<div className='flex flex-col items-center justify-center w-full'>
-				<Box sx={{maxWidth: 400, flexGrow: 1, marginTop: '20px', height: '800px'}}>
+				<Box sx={{maxWidth: 400, flexGrow: 1, marginTop: '20px', height: '750px'}}>
 					<Paper
 						square
 						elevation={0}
@@ -97,7 +97,12 @@ export function Nosotros() {
 								justifyContent: 'space-between',
 								alignItems: 'center',
 							}}>
-							<img src={images[activeStep].imgPath} alt={images[activeStep].label} />
+							<img src={images[activeStep].imgPath} alt={images[activeStep].label} className='aspect-video object-contain' />
+
+							<Typography variant='h5' align='center' sx={{marginY: '20px'}}>
+								{images[activeStep].label}
+							</Typography>
+							<Typography align='center'>{images[activeStep].text}</Typography>
 							<MobileStepper
 								steps={maxSteps}
 								position='static'
@@ -113,10 +118,6 @@ export function Nosotros() {
 									</Button>
 								}
 							/>
-							<Typography variant='h5' align='center' sx={{marginY: '20px'}}>
-								{images[activeStep].label}
-							</Typography>
-							<Typography align='center'>{images[activeStep].text}</Typography>
 						</Card>
 					</div>
 				</Box>

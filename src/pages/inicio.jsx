@@ -64,7 +64,7 @@ export function Inicio() {
 						</button>
 					</div>
 				</div>
-				<div className='border-[30px] border-primary absolute top-16 right-10 rounded-l-full'>
+				<div className='border-[30px] border-primary absolute top-16 right-10 rounded-l-full '>
 					<div className='flex  justify-center rounded-md gap-10 w-full'>
 						<img src='/assets/celular-en-app.png' alt='' className='aspect-auto bg-cover opacity-80 w-52' />
 						<img src='/assets/viajera.png' alt='' className='aspect-auto bg-cover opacity-80 rounded-md w-fit' />

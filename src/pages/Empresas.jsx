@@ -198,20 +198,28 @@ export function Empresas() {
 					Mas información
 				</Button>
 			</section>
-			<section className='flex justify-center gap-10 my-16'>
-				{recomendaciones.map((recomendacion) => (
-					<Card key={recomendacion.text} sx={{maxWidth: 345, boxShadow: '0 1px 5px 0 gray'}}>
-						<CardActionArea>
-							<CardMedia component='img' height='140' image={recomendacion.img} alt='green iguana' />
-							<CardContent>
-								<Typography gutterBottom variant='h5' component='div'></Typography>
-								<Typography variant='body2' color='text.secondary'>
-									{recomendacion.text}
-								</Typography>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				))}
+			<section className='flex justify-center gap-10 my-16 flex-col'>
+				<div className='flex flex-col gap-5 items-center'>
+					<h2 className='font-bold text-3xl text-center'>Las recomendaciones nos respaldan</h2>
+					<p className=' font-normal text-lg'>
+						Movilizamos empresas de sectores como: salud, alimentos, telecomunicaciones, educación, entretenimiento y más.
+					</p>
+				</div>
+				<div className='flex flex-wrap gap-10 justify-center'>
+					{recomendaciones.map((recomendacion) => (
+						<Card key={recomendacion.text} sx={{maxWidth: 345, boxShadow: '0 1px 5px 0 gray'}}>
+							<CardActionArea>
+								<CardMedia component='img' height='140' image={recomendacion.img} alt='green iguana' />
+								<CardContent>
+									<Typography gutterBottom variant='h5' component='div'></Typography>
+									<Typography variant='body2' color='text.secondary'>
+										{recomendacion.text}
+									</Typography>
+								</CardContent>
+							</CardActionArea>
+						</Card>
+					))}
+				</div>
 			</section>
 			<section className='bg-primary py-16 flex  items-center justify-center'>
 				<p className='text-black text-2xl font-bold text-center w-2/5'>Servicio de transporte empresarial</p>
