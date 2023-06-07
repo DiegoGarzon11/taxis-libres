@@ -38,7 +38,7 @@ Este proyecto se ha desplegado en Vercel. Puedes encontrarlo en [taxis-libres-di
 
 Debido a limitaciones de tiempo, algunas funcionalidades no han sido implementadas en este proyecto:
 
--  **Tema Responsive**: El proyecto actualmente no tiene soporte completo para dispositivos móviles y otros tamaños de pantalla. En algunos lados cuenta con el tema responsive, como lo es la pagina de inicio y algo del footer, lo que habria hecho seria terminarlo por completo y hacerlo con tailwind usando Mobile First o en su defecro terminarlo con css
+-  **Tema Responsive**: El proyecto actualmente no tiene soporte completo para dispositivos móviles y otros tamaños de pantalla. En algunos lados cuenta con el tema responsive, como lo es la pagina de inicio y algo del footer, lo que habria hecho seria terminarlo por completo y hacerlo con tailwind usando Mobile First o en su defecto terminarlo con css
 
 -  **Redireccionamientos**: No se han implementado redireccionamientos en el proyecto.
 
