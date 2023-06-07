@@ -129,7 +129,7 @@ export function Nosotros() {
 					<p>Descargas de taxis libres app</p>
 				</div>
 				<div className='flex flex-col items-center gap-3 w-3/5 text-center'>
-					<img src='src/assets/nosotros/ico-pic2.png' alt='' />
+					<img src='/assets/nosotros/ico-pic2.png' alt='' />
 					<p className='font-extrabold text-3xl'>100.000 +</p>
 					<p>viajes diarios</p>
 				</div>
