@@ -75,7 +75,7 @@ export function Navegacion() {
 								disableElevation
 								sx={{color: 'white'}}
 								onClick={handleClick}>
-								Options
+								Ciudades
 							</Button>
 							<StyledMenu
 								id='demo-customized-menu'
