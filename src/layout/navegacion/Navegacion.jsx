@@ -2,6 +2,7 @@ import {Box, Tabs, Tab, Button, Divider, MenuItem, Menu} from '@mui/material';
 import {useState} from 'react';
 import {Link, Outlet} from 'react-router-dom';
 import {styled, alpha} from '@mui/material/styles';
+import './navegacion.css';
 
 export function Navegacion() {
 	const [value, setValue] = useState(0);
@@ -116,7 +117,7 @@ export function Navegacion() {
 			</nav>
 
 			<Outlet />
-			<button className='fixed right-5 border-2 border-primary text-terciary bg-secondary p-5 rounded-full bottom-5'> Soporte</button>
+			<button className='fixed right-5 border-2 border-primary text-terciary bg-secondary p-5 rounded-full bottom-5 soporte'> Soporte</button>
 		</>
 	);
 }

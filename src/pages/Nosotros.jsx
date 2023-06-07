@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import {useState} from 'react';
 import {Card} from '@mui/material';
-import {Footer} from '../layout/Footer';
+import {Footer} from '../layout/footer/Footer';
 
 const images = [
 	{

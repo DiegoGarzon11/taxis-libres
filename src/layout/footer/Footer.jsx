@@ -4,13 +4,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import './footer.css';
 
 export function Footer() {
 	const fecha = new Date().getFullYear();
 	return (
 		<footer className='bg-secondary text-terciary  w-full  gap-10 '>
-			<div className='grid grid-cols-2 p-10'>
-				<div className='  w-full grid grid-cols-2 '>
+			<div className='grid grid-cols-2 p-10 main_display'>
+				<div className='  w-full grid grid-cols-2 links '>
 					<div className='flex flex-col gap-2'>
 						<p className='text-xl font-bold py-5'>Servicios</p>
 						<Link href='#' className='hover:text-primary hover:underline'>
@@ -91,7 +92,7 @@ export function Footer() {
 						</div>
 					</div>
 				</div>
-				<section className=' w-full pb-20 flex items-center flex-col justify-center gap-5 border-l border-primary ml-10'>
+				<section className=' w-full pb-20 flex flex-col items-center justify-center gap-5 border-l border-primary ml-10 vigilancia'>
 					<div className='flex items-center gap-3 '>
 						<img src='/assets/logo-mintransporte.png' alt='' className='w-32 aspect-auto object-contain' />
 						<img src='/assets/footerImages/logo-secmovilidad.png' alt='' className='w-32 aspect-auto object-contain' />
@@ -105,8 +106,8 @@ export function Footer() {
 				</section>
 			</div>
 
-			<section className='bg-[#3a3a3a] w-full grid grid-cols-2'>
-				<div className='flex flex-row justify-between items-center p-10 gap-10'>
+			<section className='bg-[#3a3a3a] w-full grid grid-cols-2 footer_ultimo'>
+				<div className='flex flex-row justify-between items-center p-10 gap-10 header '>
 					<img src='/assets/logo-taxislibres.png' alt='' className='w-32 aspect-auto object-contain' />
 					<Link href='#' className='hover:text-primary hover:underline'>
 						Aviso legal página web
@@ -118,7 +119,7 @@ export function Footer() {
 						Política de Tratamiento de Datos
 					</Link>
 				</div>
-				<div className='flex flex-row justify-end items-center p-10 '>
+				<div className='flex flex-row justify-end items-center p-10  iconos'>
 					<div className='flex flex-row gap-10'>
 						<FacebookSharpIcon className='cursor-pointer' />
 						<LinkedInIcon className='cursor-pointer' />

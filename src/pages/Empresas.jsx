@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import {useState} from 'react';
 import {styled} from '@mui/system';
-import {Footer} from '../layout/Footer';
+import {Footer} from '../layout/footer/Footer';
 export function Empresas() {
 	const [checkedValues, setCheckedValues] = useState({
 		terms: false,

@@ -1,11 +1,10 @@
 import {useRoutes} from 'react-router-dom';
 
-import {Navegacion} from './layout/Navegacion';
+import {Navegacion} from './layout/navegacion/Navegacion';
 import {Nosotros} from './pages/Nosotros';
-import {Inicio} from './pages/inicio';
+import {Inicio} from './pages/inicio/inicio';
 import {Viajeros} from './pages/Viajeros';
 import {Empresas} from './pages/Empresas';
-import {Ciudades} from './pages/Ciudades';
 
 export function Router() {
 	const routes = useRoutes([
@@ -30,10 +29,6 @@ export function Router() {
 				{
 					path: '/empresas',
 					element: <Empresas />,
-				},
-				{
-					path: '/ciudades',
-					element: <Ciudades />,
 				},
 			],
 		},

@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import {Button, Pagination, Stack} from '@mui/material';
-import {RecipeReviewCard} from '../components/CardBeneficios';
+import {RecipeReviewCard} from '../../components/CardBeneficios';
 import DownloadIcon from '@mui/icons-material/Download';
-import {Footer} from '../layout/Footer';
+import {Footer} from '../../layout/footer/Footer';
+import './inicio.css';
 
 function chunk(arr, size) {
 	return Array.from({length: Math.ceil(arr.length / size)}, (_, index) => {
@@ -64,7 +65,7 @@ export function Inicio() {
 						</button>
 					</div>
 				</div>
-				<div className='border-[30px] border-primary absolute top-16 right-10 rounded-l-full '>
+				<div className='border-[30px] border-primary absolute top-16 right-10 rounded-l-full  imagenes'>
 					<div className='flex  justify-center rounded-md gap-10 w-full'>
 						<img src='/assets/celular-en-app.png' alt='' className='aspect-auto bg-cover opacity-80 w-52' />
 						<img src='/assets/viajera.png' alt='' className='aspect-auto bg-cover opacity-80 rounded-md w-fit' />
@@ -91,7 +92,7 @@ export function Inicio() {
 				</div>
 			</section>
 			<div className='flex justify-center gap-10 w-full bg-primary py-10 mt-12'>
-				<div className='flex  flex-row items-center justify-between gap-10'>
+				<div className='flex  flex-row items-center justify-between gap-10 viajar_seguro'>
 					<p className='text-secondary text-4xl font-bold'>Viaja seguro en cada rincón de tu ciudad</p>
 					<Button variant='outlined' sx={{borderRadius: '50px', width: 'auto', height: '50px', backgroundColor: '#ffffff', color: '#181818'}}>
 						<DownloadIcon /> Descárgala ahora
@@ -103,10 +104,10 @@ export function Inicio() {
 				<p className=' text-2xl'>Te explicamos como funciona la app de taxis libres</p>
 				<img src='https://www.taxislibres.com.co/public/imagesNew/landing-viajeros/animacion-landing-viajero.gif' alt='' />
 			</section>
-			<section className='bg-quaternary w-full'>
+			<section className='bg-quaternary w-full '>
 				<h2 className='text-secondary font-bold text-4xl text-center mt-5'>Cobertura Taxis Libres App Viajeros</h2>
-				<div className='flex  items-center justify-center gap-10 w-full bg-quaternary py-10 mt-12'>
-					<p className='text-secondary text-4xl font-bold w-1/3'>
+				<div className='flex  items-center justify-center gap-10 w-full bg-quaternary py-10 mt-12 cobertura'>
+					<p className='text-secondary text-4xl font-bold w-1/3 text_cobertura'>
 						Cuenta con Taxis Libres en las principales ciudades del país para transportarte de forma segura.
 					</p>
 					<img src='/assets/mapa.png' alt='' className='w-96' />
@@ -122,7 +123,7 @@ export function Inicio() {
 			</section>
 			<section className=' bg-quaternary pb-20'>
 				<h3 className='text-center font-bold text-3xl py-6 '>Regulados por</h3>
-				<div className='flex justify-evenly gap-10 '>
+				<div className='flex justify-evenly gap-10 regulaciones '>
 					<img src='/assets/logo-supertransporte.png' alt='' className='w-36 aspect-auto object-contain' />
 					<img src='/assets/logo-superintendencia.png' alt='' className='w-36 aspect-auto object-contain' />
 					<img src='/assets/logo-secretaria-movilidad.png' alt='' className='w-36 aspect-auto object-contain' />

@@ -5,7 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {Footer} from '../layout/Footer';
+import {Footer} from '../layout/footer/Footer';
 
 export function Viajeros() {
 	const palabrasApp = [
