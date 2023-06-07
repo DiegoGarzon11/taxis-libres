@@ -2,7 +2,7 @@
 Taxis libres app
 
 ## Importante
-  Por cuestiones de disponibilidad y distracción me confundi en las reglas para realizar el proyecto, de igual manera, comparto mi trabajo realizado, no me fije que la tarea era realizar una landing de la hackaton, y realice fue una pagina muy similar a la de taxis libres.
+  Por cuestiones de disponibilidad y distracción me confundi en las reglas para realizar el proyecto, de igual manera, comparto mi trabajo realizado, ` no me fije que la tarea era realizar una landing de la hackaton, y realice fue una pagina muy similar a la de taxis libres.`
 
 ## Tecnologías utilizadas
 
