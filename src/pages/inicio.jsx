@@ -14,14 +14,14 @@ function chunk(arr, size) {
 
 const groups = chunk(
 	[
-		'/src/assets/celular-comparte-informacion.png',
-		'/src/assets/celular-revisa-historia.png',
-		'/src/assets/celular-elige-taxi.png',
-		'/src/assets/tarifas-controladas.png',
-		'/src/assets/personaliza-tu-viaje.png',
-		'/src/assets/contigo-en-los-viajes.png',
-		'/src/assets/escoge-metodo-de-pago.png',
-		'/src/assets/tu-seguridad-es-primero.png',
+		'/assets/celular-comparte-informacion.png',
+		'/assets/celular-revisa-historia.png',
+		'/assets/celular-elige-taxi.png',
+		'/assets/tarifas-controladas.png',
+		'/assets/personaliza-tu-viaje.png',
+		'/assets/contigo-en-los-viajes.png',
+		'/assets/escoge-metodo-de-pago.png',
+		'/assets/tu-seguridad-es-primero.png',
 	],
 	3
 );
@@ -60,14 +60,14 @@ export function Inicio() {
 						<p className='text-white text-2xl'>Movemos los sueños de los colombianos.</p>
 
 						<button className='rounded-full hover:scale-105'>
-							<img src='/src/assets/logo-whatsapp.png' alt='' className='w-24' />
+							<img src='/assets/logo-whatsapp.png' alt='' className='w-24' />
 						</button>
 					</div>
 				</div>
 				<div className='border-[30px] border-primary absolute top-16 right-10 rounded-l-full'>
 					<div className='flex  justify-center rounded-md gap-10 w-full'>
-						<img src='src/assets/celular-en-app.png' alt='' className='aspect-auto bg-cover opacity-80 w-52' />
-						<img src='/src/assets/viajera.png' alt='' className='aspect-auto bg-cover opacity-80 rounded-md w-fit' />
+						<img src='/assets/celular-en-app.png' alt='' className='aspect-auto bg-cover opacity-80 w-52' />
+						<img src='/assets/viajera.png' alt='' className='aspect-auto bg-cover opacity-80 rounded-md w-fit' />
 					</div>
 				</div>
 			</header>
@@ -109,7 +109,7 @@ export function Inicio() {
 					<p className='text-secondary text-4xl font-bold w-1/3'>
 						Cuenta con Taxis Libres en las principales ciudades del país para transportarte de forma segura.
 					</p>
-					<img src='/src/assets/mapa.png' alt='' className='w-96' />
+					<img src='/assets/mapa.png' alt='' className='w-96' />
 				</div>
 			</section>
 			<section className='flex justify-center gap-10 w-full bg-primary py-10 '>
@@ -123,11 +123,11 @@ export function Inicio() {
 			<section className=' bg-quaternary pb-20'>
 				<h3 className='text-center font-bold text-3xl py-6 '>Regulados por</h3>
 				<div className='flex justify-evenly gap-10 '>
-					<img src='/src/assets/logo-supertransporte.png' alt='' className='w-36 aspect-auto object-contain' />
-					<img src='/src/assets/logo-superintendencia.png' alt='' className='w-36 aspect-auto object-contain' />
-					<img src='/src/assets/logo-secretaria-movilidad.png' alt='' className='w-36 aspect-auto object-contain' />
-					<img src='/src/assets/logo-mintransporte.png' alt='' className='w-36 aspect-auto object-contain' />
-					<img src='/src/assets/logo-ansv.png' alt='' className='w-36 aspect-auto object-contain' />
+					<img src='/assets/logo-supertransporte.png' alt='' className='w-36 aspect-auto object-contain' />
+					<img src='/assets/logo-superintendencia.png' alt='' className='w-36 aspect-auto object-contain' />
+					<img src='/assets/logo-secretaria-movilidad.png' alt='' className='w-36 aspect-auto object-contain' />
+					<img src='/assets/logo-mintransporte.png' alt='' className='w-36 aspect-auto object-contain' />
+					<img src='/assets/logo-ansv.png' alt='' className='w-36 aspect-auto object-contain' />
 				</div>
 			</section>
 			<Footer />

@@ -72,7 +72,7 @@ export function Nosotros() {
 	return (
 		<>
 			<div>
-				<img src='/src/assets/nosotros/sede-cucuta.png' alt='' className='w-full object-cover aspect-video ' />
+				<img src='/assets/nosotros/sede-cucuta.png' alt='' className='w-full object-cover aspect-video ' />
 			</div>
 			<div className='flex flex-col items-center justify-center w-full'>
 				<Box sx={{maxWidth: 400, flexGrow: 1, marginTop: '20px', height: '800px'}}>
@@ -138,17 +138,17 @@ export function Nosotros() {
 					<p>Personas forman nuestro equipo de trabajo ¡El 66% son mujeres!</p>
 				</div>
 				<div className='flex flex-col items-center gap-3 w-3/5 text-center'>
-					<img src='/src/assets/nosotros/ico-pic4.png' alt='' />
+					<img src='/assets/nosotros/ico-pic4.png' alt='' />
 					<p className='font-extrabold text-3xl'>10+</p>
 					<p>Cursos virtuales y presenciales para conductores</p>
 				</div>
 				<div className='flex flex-col items-center gap-3 w-3/5 text-center'>
-					<img src='/src/assets/nosotros/ico-pic5.png' alt='' />
+					<img src='/assets/nosotros/ico-pic5.png' alt='' />
 					<p className='font-extrabold text-3xl'>36</p>
 					<p>Años en Colombia</p>
 				</div>
 				<div className='flex flex-col items-center gap-3 w-3/5 text-center'>
-					<img src='/src/assets/nosotros/ico-pic6.png' alt='' />
+					<img src='/assets/nosotros/ico-pic6.png' alt='' />
 					<p className='font-extrabold text-3xl'>6</p>
 					<p>Años en Colombia</p>
 				</div>
@@ -161,7 +161,7 @@ export function Nosotros() {
 						<Button sx={{marginTop: 5, color: 'black', backgroundColor: '#f1fb42', paddingX: 5, borderRadius: 2}}>Conocer Mas</Button>
 					</div>
 					<div>
-						<img src='/src/assets/nosotros/seguridad.png' alt='' />
+						<img src='/assets/nosotros/seguridad.png' alt='' />
 					</div>
 				</div>
 				<div className='flex justify-around items-center'>
@@ -171,7 +171,7 @@ export function Nosotros() {
 						<Button sx={{marginTop: 5, color: 'black', backgroundColor: '#f1fb42', paddingX: 5, borderRadius: 2}}>Conocer Mas</Button>
 					</div>
 					<div>
-						<img src='/src/assets/nosotros/medio-ambiente.png' alt='' />
+						<img src='/assets/nosotros/medio-ambiente.png' alt='' />
 					</div>
 				</div>
 				<div className='flex flex-row-reverse justify-around items-center'>
@@ -183,7 +183,7 @@ export function Nosotros() {
 						<Button sx={{marginTop: 5, color: 'black', backgroundColor: '#f1fb42', paddingX: 5, borderRadius: 2}}>Conocer Mas</Button>
 					</div>
 					<div>
-						<img src='/src/assets/nosotros/equidad-genero.png' alt='' />
+						<img src='/assets/nosotros/equidad-genero.png' alt='' />
 					</div>
 				</div>
 				<div className='flex justify-around items-center'>
@@ -193,7 +193,7 @@ export function Nosotros() {
 						<Button sx={{marginTop: 5, color: 'black', backgroundColor: '#f1fb42', paddingX: 5, borderRadius: 2}}>Conocer Mas</Button>
 					</div>
 					<div>
-						<img src='/src/assets/nosotros/compromiso-conductores.png' alt='' />
+						<img src='/assets/nosotros/compromiso-conductores.png' alt='' />
 					</div>
 				</div>
 				<div className='flex flex-row-reverse justify-around items-center mb-16'>
@@ -203,7 +203,7 @@ export function Nosotros() {
 						<Button sx={{marginTop: 5, color: 'black', backgroundColor: '#f1fb42', paddingX: 5, borderRadius: 2}}>Conocer Mas</Button>
 					</div>
 					<div>
-						<img src='/src/assets/nosotros/compromiso-ciudades.png' alt='' />
+						<img src='/assets/nosotros/compromiso-ciudades.png' alt='' />
 					</div>
 				</div>
 			</div>

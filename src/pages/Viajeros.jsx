@@ -33,7 +33,7 @@ export function Viajeros() {
 	return (
 		<>
 			<div className=' w-full'>
-				<img src='/src/assets/viajera.png' alt='' className='w-full object-cover aspect-video ' />
+				<img src='/assets/viajera.png' alt='' className='w-full object-cover aspect-video ' />
 			</div>
 			<main className='flex items-center justify-center flex-col'>
 				<div className='w-5/6 flex flex-col gap-5 my-10'>
@@ -45,7 +45,7 @@ export function Viajeros() {
 				</div>
 				<section className='flex items-center justify-center col gap-10'>
 					<div>
-						<img src='/src/assets/viajeros/captura-viajeros.png' alt='' className='w-[500px]' />
+						<img src='/assets/viajeros/captura-viajeros.png' alt='' className='w-[500px]' />
 					</div>
 					<div>
 						<h3 className='text-5xl font-bold text-secondary'>Taxis Libres App</h3>
@@ -72,7 +72,7 @@ export function Viajeros() {
 				</section>
 				<section className='flex items-center justify-center col gap-10 flex-row-reverse mt-28'>
 					<div>
-						<img src='/src/assets/viajeros/Captura-WhatsApp.png' alt='' className='w-[500px]' />
+						<img src='/assets/viajeros/Captura-WhatsApp.png' alt='' className='w-[500px]' />
 					</div>
 					<div>
 						<h3 className='text-5xl font-bold text-secondary'>WhatsApp para pedir un taxi</h3>
@@ -104,22 +104,22 @@ export function Viajeros() {
 				</section>
 				<section className='flex items-center justify-center  gap-10 mt-28'>
 					<div className='flex flex-col items-center w-80 gap-3'>
-						<img src='/src/assets/viajeros/Taxis-Libres-taxis-seguros.png' alt='' />
+						<img src='/assets/viajeros/Taxis-Libres-taxis-seguros.png' alt='' />
 						<h5 className='font-semibold text-xl'>Taxis y viajes seguros</h5>
 						<p>Revisamos que los vehículos cuenten con los seguros extra / contractual y revisiones técnico mecánicas.</p>
 					</div>
 					<div className='flex flex-col items-center w-80 gap-3'>
-						<img src='/src/assets/viajeros/Taxis-Libres-revision-conductores.png' alt='' />
+						<img src='/assets/viajeros/Taxis-Libres-revision-conductores.png' alt='' />
 						<h5 className='font-semibold text-xl'>Identidad de conductores</h5>
 						<p>Revisamos que los vehículos cuenten con los seguros extra / contractual y revisiones técnico mecánicas.</p>
 					</div>
 					<div className='flex flex-col items-center w-80 gap-3'>
-						<img src='/src/assets/viajeros/Taxis-Libres-centro-de-ayuda-seguridad.png' alt='' />
+						<img src='/assets/viajeros/Taxis-Libres-centro-de-ayuda-seguridad.png' alt='' />
 						<h5 className='font-semibold text-xl'>Estamos para ayudarte 24/7</h5>
 						<p>Cuenta con nuestro centro de ayuda antes, durante y después de cada viaje.</p>
 					</div>
 					<div className='flex flex-col items-center w-80 gap-3'>
-						<img src='/src/assets/viajeros/Taxis-Libres-oficinas.png' alt='' />
+						<img src='/assets/viajeros/Taxis-Libres-oficinas.png' alt='' />
 						<h5 className='font-semibold text-xl'>Oficinas para apoyarte</h5>
 						<p>Visítanos en nuestras sedes a nivel nacional y recibe ayuda en lo que necesites.</p>
 					</div>

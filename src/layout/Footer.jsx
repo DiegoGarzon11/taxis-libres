@@ -79,35 +79,35 @@ export function Footer() {
 						<div className='flex flex-col w-auto '>
 							<p className='mt-5 text-xl '>App Conductor</p>
 							<div className='flex flex-row gap-3'>
-								<img src='/src/assets/img-store-googleplay.png' alt='' className='w-40 cursor-pointer' />
-								<img src='/src/assets/img-store-appgallery.png' alt='' className='w-40 cursor-pointer' />
+								<img src='/assets/img-store-googleplay.png' alt='' className='w-40 cursor-pointer' />
+								<img src='/assets/img-store-appgallery.png' alt='' className='w-40 cursor-pointer' />
 							</div>
 							<p className='mt-5 text-xl '>App Viajero</p>
 							<div className='flex flex-row gap-3 flex-wrap'>
-								<img src='/src/assets/img-store-googleplay.png' alt='' className='w-40 cursor-pointer' />
-								<img src='/src/assets/img-store-appgallery.png' alt='' className='w-40 cursor-pointer' />
-								<img src='/src/assets/img-store-appstore.png' alt='' className='w-40 cursor-pointer' />
+								<img src='/assets/img-store-googleplay.png' alt='' className='w-40 cursor-pointer' />
+								<img src='/assets/img-store-appgallery.png' alt='' className='w-40 cursor-pointer' />
+								<img src='/assets/img-store-appstore.png' alt='' className='w-40 cursor-pointer' />
 							</div>
 						</div>
 					</div>
 				</div>
 				<section className=' w-full pb-20 flex items-center flex-col justify-center gap-5 border-l border-primary ml-10'>
 					<div className='flex items-center gap-3 '>
-						<img src='/src/assets/logo-mintransporte.png' alt='' className='w-32 aspect-auto object-contain' />
-						<img src='/src/assets/footerImages/logo-secmovilidad.png' alt='' className='w-32 aspect-auto object-contain' />
+						<img src='/assets/logo-mintransporte.png' alt='' className='w-32 aspect-auto object-contain' />
+						<img src='/assets/footerImages/logo-secmovilidad.png' alt='' className='w-32 aspect-auto object-contain' />
 					</div>
 					<div className='flex items-center gap-3'>
-						<img src='/src/assets/footerImages/logo-ansv.png' alt='' className='w-32 aspect-auto object-contain' />
+						<img src='/assets/footerImages/logo-ansv.png' alt='' className='w-32 aspect-auto object-contain' />
 
-						<img src='/src/assets/footerImages/logo-superindycom.png' alt='' className='w-32 aspect-auto object-contain' />
-						<img src='/src/assets/footerImages/logo-supertransporte.png' alt='' className='w-32 aspect-auto object-contain' />
+						<img src='/assets/footerImages/logo-superindycom.png' alt='' className='w-32 aspect-auto object-contain' />
+						<img src='/assets/footerImages/logo-supertransporte.png' alt='' className='w-32 aspect-auto object-contain' />
 					</div>
 				</section>
 			</div>
 
 			<section className='bg-[#3a3a3a] w-full grid grid-cols-2'>
 				<div className='flex flex-row justify-between items-center p-10 gap-10'>
-					<img src='src/assets/logo-taxislibres.png' alt='' className='w-32 aspect-auto object-contain' />
+					<img src='/assets/logo-taxislibres.png' alt='' className='w-32 aspect-auto object-contain' />
 					<Link href='#' className='hover:text-primary hover:underline'>
 						Aviso legal página web
 					</Link>

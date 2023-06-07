@@ -24,15 +24,15 @@ export function Empresas() {
 	};
 	const recomendaciones = [
 		{
-			img: '/src/assets/logo-compensar.png',
+			img: '/assets/logo-compensar.png',
 			text: 'Estamos muy felices de que compañías como ustedes hagan parte de nuestros aliados estratégicos, un buen servicio a nuestros colaboradores es lo que los caracteriza.',
 		},
 		{
-			img: '/src/assets/logo-capilla-fe.png',
+			img: '/assets/logo-capilla-fe.png',
 			text: 'El servicio por parte de los aliados conductores es bastante satisfactorio. A los usuarios de Capillas de la Fé les gusta el servicio.',
 		},
 		{
-			img: '/src/assets/davivienda-logo.png',
+			img: '/assets/davivienda-logo.png',
 			text: 'Como empresa proporciona buen servicio y el personal es altamente capacitado.',
 		},
 	];
@@ -93,7 +93,7 @@ export function Empresas() {
 				<h2>Si ya cuentas con nuestros Vales Digitales</h2>
 				<Button>Inciar Sesión</Button>
 			</div>
-			<div className="grid grid-cols-2 gap-4 items-center justify-center bg-[url('/src/assets/bogota.png')] bg-cover aspect-auto bg-no-repeat brightness-75 ">
+			<div className="grid grid-cols-2 gap-4 items-center justify-center bg-[url('/assets/bogota.png')] bg-cover aspect-auto bg-no-repeat brightness-75 ">
 				<div className='flex justify-center'>
 					<div className='w-2/3'>
 						<h3 className='text-white text-4xl font-bold shadow-md p-4 bg-black bg-opacity-50'>
@@ -174,12 +174,12 @@ export function Empresas() {
 			<section className='bg-quaternary w-full flex justify-evenly'>
 				<div className='flex  items-center justify-center w-full bg-quaternary py-10 mt-12'>
 					<div className='flex flex-col items-center gap-10'>
-						<img src='/src/assets/icono-ciudades-empresas.png' alt='' className='w-56' />
+						<img src='/assets/icono-ciudades-empresas.png' alt='' className='w-56' />
 						<p className='text-secondary text-4xl font-bold w-1/3'>
 							Taxis Libres presta el servicio de transporte para empresas en las principales ciudades de Colombia.
 						</p>
 					</div>
-					<img src='/src/assets/mapa.png' alt='' className='w-[650px]' />
+					<img src='/assets/mapa.png' alt='' className='w-[650px]' />
 				</div>
 			</section>
 			<section className='bg-[#1b1f3b] py-16 flex  items-center justify-center'>
