@@ -16,7 +16,7 @@ Breve descripción del proyecto.
 
 ## Instalación
 
-1. Clona el repositorio: `https://github.com/tu-usuario/tu-proyecto.gi](https://github.com/DiegoGarzon11/taxis-libres.git`
+1. Clona el repositorio: `https://github.com/DiegoGarzon11/taxis-libres.git`
 2. Navega al directorio del proyecto: `cd taxis-libres`
 3. Instala las dependencias: `npm install`
 
